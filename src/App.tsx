@@ -49,7 +49,6 @@ function App() {
             <Button
               key={item.name}
               name={item.name}
-              val={item.count}
               handlerFunc={incrementCount}
             />
           );

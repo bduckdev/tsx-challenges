@@ -1,6 +1,5 @@
 interface ButtonProps {
   name: string;
-  val: number;
   handlerFunc: () => void;
 }
 function Button({ name, handlerFunc }: ButtonProps) {
