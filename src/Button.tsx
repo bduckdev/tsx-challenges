@@ -1,11 +1,11 @@
 interface ButtonProps {
     name: string;
     val: number;
-    handlerFunc: (index: number) => void;
+    handlerFunc: (name: string) => void;
 }
 function Button({ name, val, handlerFunc }: ButtonProps) {
     return (
-        <button onClick={() => handlerFunc(val)}>
+        <button onClick={() => handlerFunc(name)}>
             {name} is {val}
         </button>
     );

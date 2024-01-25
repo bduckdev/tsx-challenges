@@ -28,9 +28,9 @@ const counts: Count[] = [
 function App() {
     const [counters, setCounters] = useState(counts);
 
-    function incrementCount(oldCount: number) {
+    function incrementCount(name: string) {
         const newCounters = counters.map((item) => {
-            if (item.count === oldCount) {
+            if (item.name === name) {
                 item.name;
                 item.count = item.count + 1;
                 return item;
