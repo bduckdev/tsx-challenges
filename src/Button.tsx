@@ -1,8 +1,10 @@
 interface ButtonProps {
   name: string;
-  handlerFunc: () => void;
+  val: number;
+  handlerFunc: (index: number) => void;
 }
-function Button({ name, handlerFunc }: ButtonProps) {
-  return <button onClick={handlerFunc}>{name}</button>;
+function Button({ name, val, handlerFunc }: ButtonProps) {
+  console.log(val);
+  return <button onClick={() => handlerFunc(1)}>{name}</button>;
 }
 export default Button;
