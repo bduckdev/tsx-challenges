@@ -1,5 +1,4 @@
 import { useState } from "react";
-import NavBar from "./NavBar";
 import { beeMovieScriptArr } from "./beeMovieScript";
 import { beeMovieScriptByWordArr } from "./beeMovieScriptByWord";
 import { beeMovieScriptByCharArr } from "./beeMovieScriptByChar";
@@ -13,7 +12,15 @@ function Index() {
 
   return (
     <div className="py-3">
-      <NavBar />
+      {/*
+CURSED
+CURSED
+CURSED
+CURSED
+CURSED
+CURSED
+CURSED
+          */}
       <h1 className="text-4xl font-bold text-center mt-10">TSX Challenges</h1>
       {beeMovieScript ? (
         <button

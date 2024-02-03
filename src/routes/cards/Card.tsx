@@ -1,13 +1,6 @@
-function Card({
-    title,
-    children,
-}: {
-    title: string;
-    children: React.ReactNode;
-}) {
+function Card({ children }: { children: React.ReactNode }) {
     return (
-        <div className="bg-gray-500 m-10 p-10 rounded-xl">
-            <p className="text-3xl font-bold">{title}</p>
+        <div className="bg-black my-10 mx-auto gap-10 p-10 rounded-xl flex justify-between w-5/6">
             {children}
         </div>
     );
